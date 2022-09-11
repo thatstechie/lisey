@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Lisey haqqında{% endblock title %}
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a  href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a class="active" href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a class="active" href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+{% block start %}
+  <main id="main">
+
+    <main id="main">
+      <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+          <h2>Lisey haqqında</h2>
+        </div>
+      </div>
+
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <p>Sizləri Akademik Zərifə adına liseyin müəllim-şagird kollektivi adından rəsmi&nbsp;səhifəmizdə salamlayır və Bizi seçdiyiniz, ən əsası Bizə güvəndiyiniz üçün Sizlərə&nbsp;sonsuz təşəkkürümüzü bildiririk.</p>
+
+              <p>Akademik Zərifə Əliyeva adına lisey Azərbaycanın ən məşhur, eyni zamanda təhsil&nbsp;ictimaiyyətinin daim diqqət mərkəzində olan nüfuzlu təhsil ocağıdır. Lisey 28 aprel 2008-ci ildə saysız-hesabsız insanların gözlərinə nur bəxş etmiş görkəmli oftalmoloq alim&nbsp;Zərifə xanım Əliyevanın 85 illik yubileyi ərəfəsində açılıb. Biz də Akademik Zərifə&nbsp;Əliyeva adına lisey kollektivi olaraq məsuliyyətimizin fərqindəyik və əsas vəzifəmizin&nbsp;Azərbaycanın işıqlı gələcəyi olan gənclərin düzgün tərbiyəsindən ibarət olduğunu bilir,&nbsp;bizlərə əmanət etdiyiniz övladlarınızın hər birini ayrı bir dəyər olaraq görür, onları yeni&nbsp;Azərbaycana layiq bir gənclik olaraq yetişdirməyi ən əsas vəzifəmiz hesab edirik.</p>
+
+              <p>Akademik Zərifə Əliyeva adına lisey böyük və etibarlı bir evdir. Bu evi biz hamımız:&nbsp;müəllimlər, əməkdaşlar, şagirdlər,məzunlar, valideynlər əmək sərf edərək yaratmışıq. Bu&nbsp;ev bizim xeyirxah əməllərimizdən, keyfiyyət göstəricilərimizdən, istedad və gərgin&nbsp;əməyimizdən yaranıb. Burada ağıl, mehribanlıq, cəsarət, ən əsası milli-mənəvi ənənələrə&nbsp;sədaqət hökmranlıq edir və Azərbaycan gəncliyinin bir qismi bu liseydə yetişir. Biz lisey&nbsp;ailəsi adından deyirik ki, istər liseydə oxuduqları müddət ərzində, istərsə də universitet&nbsp;həyatında arzularımızı reallaşdıran və liseyimizin ənənələrinin layiqli davamçısına&nbsp;çevrilən gəncliyin yanında olacağıq və onların uğurları ilə daima fəxr edəcəyik.</p>
+
+              <p>Liseyimizin əsas missiyası Azərbaycanda müasir gənc nəslin inkişafı naminə effektiv&nbsp;təhsil sistemlərinin təcrübəsinə əsaslanaraq dünyaya açıq, milli-mənəvi dəyərlərə sadiq,&nbsp;sosial fəal, yaradıcı, bilikli və bacarıqlı, rəqabət qabiliyyətli fərdin formalaşdırıldığı&nbsp;mühitin yaradılmasıdır.</p>
+
+              <p>Biz Akademik Zərifə Əliyeva adına lisey olaraq elm və texnologiyanın fərqində olan,&nbsp;dəyişməyə və inkişafa açıq olan, öyrənməyi sevən , milli-mənəvi dəyərləri yaşayan və&nbsp;yaşadan, ətrafını daima diqqət mərkəzində saxlayan və müsbət iqlim formalaşdıran,&nbsp;özünə güvənənən, ən əsası özünü mühakimə etməyi bacaran, müasir, demokratik&nbsp;dünyada sosiallaşa bilən dünya insanı yetişdirmək, eyni zamanda dünyanın ən yaxşı&nbsp;təhsil və elm mərkəzlərindən biri olmaq iddiasındayıq. Bu yolda bizə dəstək olan, daim&nbsp;öz üzərində işləyən, Azərbaycan təhsilinin uğurlu inkişafı naminə dünya təhsil&nbsp;sistemindəki effektiv üsulları milli təhsilimizə tətbiq edən və bu şərəfli yolda&nbsp;fədakarcasına çalışan kollektivimizə təşəkkür etməyi özümüzə borc bilirik.</p>
+
+              <p>Əziz valideynlər, Akademik Zərifə Əliyeva adına lisey övladınıza gözəl və işıqlı bir&nbsp;gələcək naminə bizi seçdiyiniz və bizə güvəndiyiniz üçün Sizlərə də sonsuz təşəkkür edir.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Ümumi şagird sayı</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Universitetə qəbul olmuş şagird sayı</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Müəllim sayı</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Olimpiadaçı sayı</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Niyə Gəncə FRİTL?</h3>
+              <p>
+                Olimpiadalar üzrə Azərbaycanda nömrə 3 olan və ümumi göstəricilərə əsasən yüksək reytinqli Gəncə FRİTL övladınızın gələcək həyatında böyük rol oynayacaq.
+              </p>
+              <div class="text-center">
+                <a href="message.html" class="more-btn">Daha çox<i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-medal"></i>
+                    <h4>Olimpiadalara qatılmaq</h4>
+                    <p>Hər il şagirdlərimiz respublika və beynəlxalq olimpiadalara qatılır və müxtəlif dərəcəli mükafatlar qazanırlar.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-book-open"></i>
+                    <h4>DİM imtahanından yüksək nəticə yığmaq</h4>
+                    <p>Məzunlarımızın 90%-i 500+ DİM imtahanından nəticə göstərirlər.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-laptop"></i>
+                    <h4>STEAM dərslərinə qatılmaq</h4>
+                    <p>Şagirdlərimiz Steam Azerbaijan Festivalı, Teknofest və başqa STEAM-lə bağlı yarışlara qatılırlar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+{% endblock %}

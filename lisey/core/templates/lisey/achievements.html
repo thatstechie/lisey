@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block start %}
+{% block title %}
+Nailiyyətlər
+{% endblock title %}
+
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a  href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a class="active" href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+<main id="main">
+
+  <main id="main">
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Nailiyyətlər</h2>
+      </div>
+    </div>
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content_edusys">
+            <h2>2016-2017-ci tədris ili</h2>
+
+            <p>&nbsp; 2016-2017-ci tədris ilində şagird m&uuml;əllim nisbəti 1:11,3 kimi olmuş, tədris planına əsasən şagirdlərin biliyinin dərinləşdirilməsi &uuml;&ccedil;&uuml;n se&ccedil;mə fənlər ve fak&uuml;ltətiv məşğələlər &uuml;zrə saatlar
+              ayrılmışdır.</p>
+
+            <p>&nbsp; 191 nəfər IX sinfin buraxılış imtahanında iştirak etmiş və 39 şagird fərqlənmə attestatı almışdır.&nbsp;IX siniflərin buraxılış imtahanlarının nəticələrinə g&ouml;rə Bakı şəhəri &uuml;zrə saxlanılmışdır.</p>
+
+            <p>&nbsp; 178 məzun m&uuml;vəffəqiyyətlə tam orta təhsili başa vurmuş, 53 nəfər fərqlənmə attestatı, 15 nəfər qızıl medal, 4 nəfər g&uuml;m&uuml;ş medal almışlar.&nbsp;Məzunların ali məktəblərə qəbul g&ouml;stəricisi 100%
+              olmuşdur,&nbsp;onların 65 nəfəri 600-dan yuxarı bal toplamışlar. Bu il həm də 2 nəfər məzunumuz 700 bal yığmağı bacarmışdır.&nbsp;&Uuml;&ccedil; məzunumuz Prezident təqa&uuml;d&uuml;nə layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.&nbsp;</p>
+
+            <p>Cari tədris ilində liseyimizin digər nailiyyətləri aşağıda sadalanmışdır:</p>
+
+            <ul>
+              <li>Akademik Zərifə Əliyeva adına liseyin şagirdləri hər il ənənəvi olaraq ke&ccedil;irilən Respublika Fənn Olimpiadalarında uğurla iştirak edərək&nbsp;&nbsp;2 qızıl, 5 g&uuml;m&uuml;ş, 12 b&uuml;r&uuml;nc olmaqla 19 medalla təltif
+                olunmuşlar.&nbsp;</li>
+              <li>15-17 fevral 2017-ci il tarixdə ke&ccedil;irilən &laquo;Sabahın alimləri&raquo; VI Respublika m&uuml;sabiqəsində də liseyin şagirdləri b&ouml;y&uuml;k uğurlara imza atmışdır. Onlar m&uuml;xtəlif kateqoriyalar &uuml;zrə 14 layihə
+                ilə təmsil olunmuşdur və 5 layihə m&uuml;sabiqədə y&uuml;ksək yer qazanmışdır. (3-II yer; 2-III yer)</li>
+              <li>Akademik Zərifə Əliyeva adına liseyin 9r2 sinif şagirdi Quliyev Barat Rusiyanın Rostov şəhərində ke&ccedil;irilən &quot;Don payızı&quot; a&ccedil;ıq regional turnirində yeniyetmələr arasında qılıncoynatma &uuml;zrə II yerə layiq
+                g&ouml;r&uuml;lm&uuml;şd&uuml;r.</li>
+              <li>&ldquo;Ədəbiyyat biliciləri&rdquo; m&uuml;sabiqəsində liseyin 11a3 sinif şagirdi İsmayılova Səbinə<strong> </strong>II yerə layiq g&ouml;r&uuml;lərək diplomla təltif edilmişdir.</li>
+              <li>31 oktyabr- 7 noyabrın tarixlərində T&uuml;rkiyənin Antalya şəhərində məktəblilərin və kollec tələbələrinin VIII Beynəlxalq Bilik Olimpiadası ke&ccedil;irilib. Olimpiadanın nəticələrinə əsasən şagirdlərimiz 4 qızıl, 4
+                g&uuml;m&uuml;ş, 6 b&uuml;r&uuml;nc medal qazanmışdı.</li>
+              <li>İstedadların hazırlığı laboratoriyası&rdquo; layihəsi &ccedil;ər&ccedil;ivəsində 2016-сi ildə ke&ccedil;irilən IV Respublika Olimpiadasının qaliblərindən bizim şagirdlərimizdən 11 a1 sinfin şagirdlərdi Ayxan Əhmədli qızıl, Samir
+                İbrahimzadə isə g&uuml;m&uuml;ş medal qazandılar. Qaliblər Gənclər və İdman Nazirliyinin və tərəfdaş təşkilatların diplomları və qiymətli hədiyyələr ilə m&uuml;kakfatlandırıldılar.</li>
+              <li>Dekabrın 20-də isə &nbsp;Beynəlxalq Muğam Mərkəzində Nizami Gəncəvinin 875 illik yubileyinə həsr olunmuş incəsənət sahələri &uuml;zrə baxış-m&uuml;sabiqəsi qaliblərinin təltif olunması mərasimi ke&ccedil;irildi. M&uuml;sabiqədə 4
+                nominasiya &uuml;zrə 79 qalib yer m&uuml;əyyən olunub. Liseyimizin şagirdləri &ldquo;Ən yaxşı səhnəcik&rdquo; nominasiyası &uuml;zrə I yerə, təsviri incəsənət nominasiyası &uuml;zrə isə &nbsp;9r4 sinif şagirdləri Əlibəyli Əminə və
+                Əlibəyli Şahin I yerə, 9a1 sinif şagirdi R&uuml;stəmli Nərmin isə II yerə layiq g&ouml;r&uuml;lərək&nbsp; diplom və qiymətli hədiyyələrlə m&uuml;kafatlandırılıblar.</li>
+              <li>Fizika- riyaziyyat və informatika təmay&uuml;ll&uuml; liseyin 50 illik yubileyinə həsr olunmuş Bakı məktəbliləri arasında informatikadan İOM-də olimpiadasında liseyimizin 9 -cu sinif şagirdi Əsədzadə Rəhman olimpiadanın qalibi
+                olmuşdur.</li>
+              <li>28 Dekabr 2016-cı il tarixində ke&ccedil;irilən&ldquo;Fənlərin Dostluğu Olimpiadası&rdquo;da liseyimizin şagirdi<strong> </strong>Toğrul Hacızadə III Yerə layiq g&ouml;r&uuml;ld&uuml;.</li>
+              <li>&ldquo;İdeya var!&rdquo; gənclərin I &uuml;mumrespublika elmi-yaradıcılıq m&uuml;sabiqəsində liseyimizin 3 layihəsindən 2-si uğur qazanıb. &ldquo;AY TRY&rdquo; (Toxmaqla Ritmik Yeriş-Azərbaycan İdman Yerişi) &nbsp;layihəsi
+                &uuml;zrə 10r1 sinif şagirdi Məlikzadə Mahirə I yerə, digər layihə &uuml;zrə isə şagirdlərimizdən ikisi: XI a1 sinif şagirdi Adilov Toğrul və XI r2 sinif şagirdi Babayev Fərid III yerə layiq g&ouml;r&uuml;l&uuml;b.</li>
+              <li>30 Mart 2017 Rusiya Yazı&ccedil;ılar İttifaqının &quot;İlin şairi&quot; milli ədəbi m&uuml;kafatı &uuml;zrə ke&ccedil;irilən m&uuml;sabiqədə Akademik Zərifə Əliyeva adına liseyin şagirdi Əhmədova Ləman &quot;Deb&uuml;t&quot;
+                nominasiyası &uuml;zrə diplomla təltif olundu</li>
+              <li>Milli Olimpiya Komitəsi və Təhsil Nazirliyi tərəfindən birgə təşkil edilən &quot;Olympic Moves&quot; (Hərəkətə Qoşul) &ccedil;ər&ccedil;ivəsində rayondaxili yarışlarda Akademik Zərifə Əliyeva adına liseyin hər iki komandası
+                (voleybol və basketbol idman n&ouml;v&uuml; &uuml;zrə) uğurla iştirak etmişdir. Qeyd edək ki, Yasamal rayonu &uuml;zrə ke&ccedil;irilən yarışlarda liseyin qızlardan ibarət voleybol komandası &nbsp;II, oğlanlardan ibarət basketbol
+                komandası isə III yerə layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.&nbsp;</li>
+              <li>Liseyimizin 11R2 sinif şagirdi Fərid Babayev Amerika səfirliyi tərəfindən ke&ccedil;irilən &ldquo;Essay Contest&rdquo;&nbsp;&nbsp;m&uuml;sabiqəsində&nbsp;&ldquo;How Azerbaijan and USA can work together to make the world a better
+                for young poeple&rdquo; adlı m&ouml;vzusunda esse yazaraq&nbsp;qalib oldu.</li>
+              <li>Akademik Zərifə Əlliyeva adına liseyin XI A1 sinif şagirdi Adilov Toğrul və XI R2 sinif şagirdi Babayev Fərid 45 &ouml;lkədən 572 şagirdin iştirakı ilə 27 aprel - 1 may 2017-ci il tarixlərində&nbsp;Rumıniyada ke&ccedil;irilən
+                &quot;İNFOMATRİX&quot; komp&uuml;ter layihə olimpiadasında liseyimizi uğurla təmsil etmişdirlər. Beynəlxalq dərəcəli yarışda Adilov Toğrul və Babayev Fərid&nbsp;&nbsp;357 layihə arasında &quot;Proqramlaşdırma&quot; layihəsi
+                &uuml;zrə&nbsp;m&uuml;sabiqədə iştirak etmiş və b&uuml;r&uuml;nc medala layiq g&ouml;r&uuml;lm&uuml;şd&uuml;rlər.&nbsp;</li>
+              <li>3 may 2017-ci il tarixində &quot;G&uuml;l&uuml;stan&quot; sarayında &uuml;mummilli lider Heydər Əliyevin anadan olmasının 94-c&uuml; ild&ouml;n&uuml;m&uuml; m&uuml;nasibətilə təşkil olunmuş &quot;Ən yaxşı təqdimat&quot;
+                m&uuml;sabiqəsində liseyin 9r2 sinif şagirdi Salmanlı Amilin təqdimatı &quot;Ən yaxşı təqdimat&quot; se&ccedil;ilərək&nbsp;I yerə layiq g&ouml;r&uuml;l&uuml;b.</li>
+              <li>ABŞ-ın Texas ştatının Houston şəhərində10-cu Beynəlxalq Davamlı &nbsp;D&uuml;nya- Enerji M&uuml;həndislik Ətraf M&uuml;hit Layihə Olimpiadası (ISWEEP International Sustainable World Energy Engineering Environment Project Olympiad
+                ) ke&ccedil;irilib. . Olimpiadada Azərbaycanı &quot;G&uuml;nəş enerjisinin &ccedil;evrilməsi və səmərəliliyinin artırılması &uuml;&ccedil;&uuml;n yeni GaSe nanostrukturların inkişafı&quot;adlı layihə&nbsp;ilə Akademik Zərifə Əliyeva
+                adına liseyin 10R1 sinif şagirdi Nailə Məmmədova və İstək liseyinin 8-ci sinif şagirdi Aytən Qayıbova y&uuml;ksək səviyyədə təmsil edərək b&uuml;r&uuml;nc medala layiq g&ouml;r&uuml;l&uuml;blər.</li>
+              <li>21-27 may 2017-ci il tarixlərində Hindistanın Dehli şəhərində&nbsp;6-cı Amiti Beynəlxalq Olimpiadası &nbsp;(Sixth Amity İnternational Olympiad for&nbsp;Science and Mathematics) ke&ccedil;irilib. Olimpiadada Akademik Zərifə Əliyeva
+                adına liseyi 15 şagird təmsil edib. 15 şagirddən 2-si beynəlxalq, 9-u isə &nbsp;komanda daxilində&nbsp;medal qazanıblar.</li>
+              <li>Dubayda ke&ccedil;irilən &quot;Go up for the climate&quot; onlayn layihə olimpiadasında liseyimizin şagirdləri Sona Sadıqova və Nuray Xəlilbəyli&nbsp;finalda da m&uuml;vəffəqiyyət əldə edərək b&uuml;r&uuml;nc medal
+                qazanmışdırlar.&nbsp;</li>
+              <li>17-21 iyun 2017-ci il tarixlərində&nbsp;<strong> </strong>T&uuml;rkiyənin İzmir şəhərində ke&ccedil;irilən Beynəlxalq İnformatika olimpiadasındasında liseyimizin şagirdləri Əsgərov Ələkbər - g&uuml;m&uuml;ş medal, Muxtarov Ziya -
+                b&uuml;r&uuml;nc medal qazanmışlar.</li>
+              <li>Moskvada ke&ccedil;irilən&nbsp; &laquo;&nbsp;Megapol&uuml;s&nbsp;&raquo; Beynəlxalq fənn olimpiadasında &laquo;&nbsp;İnformatika&nbsp;&raquo; fənni &uuml;zrə Muxtarov Ziya b&uuml;r&uuml;nc medala layiq
+                g&ouml;r&uuml;lm&uuml;şd&uuml;r.</li>
+            </ul>
+
+            <h2>2015-2016-cı tədris ili</h2>
+
+            <p>2015-2016-cı tədris ilində şagird m&uuml;əllim nisbəti 1:13,4 kimi olmuş, tədris planına əsasən şagirdlərin biliyinin dərinləşdirilməsi &uuml;&ccedil;&uuml;n se&ccedil;mə fənlər ve fak&uuml;ltətiv məşğələlər &uuml;zrə saatlar
+              ayrılmışdır.</p>
+
+            <p>XI sinfi bitirən 202 şagirddən 202 (100%) nəfəri Təhsil Nazirliyinin attestat imtahanlarında, 9-cu sinfi bitirən 228 şagird isə buraxılış imtahanlarında uğurla iştirak etmişdirlər.</p>
+
+            <p>Liseyin on bir məzunu qızıl medala layiq g&ouml;r&uuml;lm&uuml;ş və y&uuml;ksək balla ali məktəblərə daxil olmuşdur. Şagirdlərin 99% ali məktəbə daxil olmuş və onların 59 nəfəri 600-dan yuxarı bal toplamışdırlar. &Uuml;&ccedil;
+              şagird Prezident təqa&uuml;d&uuml;nə layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.</p>
+
+            <p>Fənn olimpiadalarının Respublika turunda 9 şagirdimiz qızıl, g&uuml;m&uuml;ş, b&uuml;r&uuml;nc medallarla təltif olunmuşdur.</p>
+
+            <p>13 fevral 2016-ci il tarixində ke&ccedil;irilən &laquo;Sabahın alimləri&raquo; V Respublika m&uuml;sabiqəsində də liseyin şagirdləri b&ouml;y&uuml;k uğurlara imza atmışdırlar. Onlar m&uuml;xtəlif kateqoriyalar &uuml;zrə 19 layihə ilə
+              təmsil olunmuşdurlar. 9 layihə m&uuml;sabiqədə y&uuml;ksək yer qazanmış, bir layihə isə x&uuml;susi m&uuml;kafata layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r: biologiya kateqoriyası &uuml;zrə I yer, m&uuml;həndislik kateqoriyası &uuml;zrə I
+              yer, komp&uuml;ter elmləri &uuml;zrə I yer, fizika-astranomiya kateqoriyası &uuml;zrə II yer, riyaziyyat kateqoriyası &uuml;zrə II yer, digər kateqoriyalar &uuml;zrə isə d&ouml;rd III yer qazanılmışdır.</p>
+
+            <p>I yerə layiq g&ouml;r&uuml;lm&uuml;ş Biologiya kateqoriyası &uuml;zrə layihənin qalibləri Əli Əliyev və Ayşən Əliyeva və II yerə layıq g&ouml;r&uuml;lm&uuml;ş Fizika-Astronomiya kateqoriyası &uuml;zrə layihənin qalibləri Mədət və
+              Nigar Sərdarlı bacı-qardaşları bu ilin may ayında ABŞ-ın Pensilvaniya ştatının Pitsburq şəhərində ke&ccedil;irilmiş &laquo;Elm və m&uuml;həndislik&raquo; sərgisində respublikamızı təmsil etmişdirlər. Nigar və Mədət Sərdarlıların
+              layihəsi x&uuml;susi m&uuml;kafata layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.</p>
+
+            <ul>
+              <li>2015-2016-cı tədris ilində 8 m&uuml;əllim &ldquo;Ən yaxşı m&uuml;əllim&rdquo; m&uuml;sabiqəsinin qalibi olmuşdur.</li>
+              <li>Heydər Əliyevin 93 illik yubileyinə həsr olunmuş &ldquo;Ən yaxşı təqdimat&rdquo; m&uuml;sabiqəsində liseyin 9a3 sinif şagirdi Məmmədova Eliza I yerə layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.</li>
+              <li>&ldquo;Ədəbiyyat biliciləri&rdquo; m&uuml;sabiqəsində liseyin 10r3 sinif şagirdi Mədinə Məsimova I yerə layiq g&ouml;r&uuml;lərək diplomla təltif edilmişdir.</li>
+              <li>Mədinə Məsimova eyni zamanda Amerikada Şl&uuml;mberji şirkətinin təşkilat&ccedil;ılığı ilə ke&ccedil;irilən rəsm əsərləri m&uuml;sabiqəsində Azərbaycan &uuml;zrə I yerə layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.</li>
+              <li>&ldquo;Elektron təhsil&rdquo; Respublika m&uuml;sabiqəsində 2 şagirdimiz: Ziya Muxtarov və R&uuml;fət Şirvanlı qaliblər sırasında yer qazanmışdırlar.</li>
+              <li>Liseyin şagirdi Ayşən Əliyeva Azərbaycanda təşkil olunmuş Milli MUN konfransında iştirak etmiş, əksəriyyəti tələbələrdən ibarət həmin m&uuml;sabiqədə &ldquo;Ən yaxşı n&uuml;mayəndə&rdquo; adına layiq
+                g&ouml;r&uuml;lm&uuml;şd&uuml;r.</li>
+              <li>Qazaxıstanın Almata şəhərində Əl-Fərabi adına Qazaxıstan Milli Universitetinin təşkilat&ccedil;ılığı ilə riyaziyyat-mexanika &uuml;zrə Beynəlxalq tədqiqat, layihə olimpiadasında XI sinif şagirdləri İlkin Musayev qızıl, Nigar
+                Əsədova isə g&uuml;m&uuml;ş medal qazanmışdırlar.</li>
+              <li>Waterloo Universitetinin riyaziyyat onlayn fənn olimpiadasında 10a1 sinif şagirdi Əbd&uuml;rrəhman Atakişiyev uğur qazanaraq sertifikat və medalla təltif olunmuşdur.</li>
+              <li>Rumıniyanın Buxarest şəhərində ke&ccedil;irilən İnfoMatrix beynəlxalq layihə m&uuml;sabiqəsində XI sinif şagird İlkin Musayev &ldquo;Proqramlaşdırma&rdquo; kateqoriyası &uuml;zrə qızıl medal qazanmışdır.</li>
+              <li>Niderlandda ke&ccedil;irilən İNESPO beynəlxalq ekoloji layihə olimpiadasında Anna Jeleznyak və Cavid Mərdanov b&uuml;r&uuml;nc medal qazanmışdırlar.</li>
+              <li>Qafqaz Universitetində ke&ccedil;irilən IX İnformatika layihə olimpiadasında şagirdlərimiz ALgoKOD nominasiyası &uuml;zrə bir g&uuml;m&uuml;ş, iki b&uuml;r&uuml;nc medal qazanmışdırlar.</li>
+              <li>Lomonosov adına MDU-nun Bakı filialında məktəblilər arasında ke&ccedil;irilən proqramlaşdırma m&uuml;sabiqəsində 4 nəfər I, 1 nəfər II, 1 nəfər isə III yerə layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.</li>
+              <li>&Ouml;tən ilin noyabr ayında T&uuml;rkiyədə ke&ccedil;irilən Beynəlxalq fənn olimpiadasında şagrdlərimiz 3 qızıl, 3 g&uuml;m&uuml;ş, 3 b&uuml;r&uuml;nc medal qazanmış və coğrafiya fənni &uuml;zrə komanda iştirakı ilə 2-ci yerə
+                layiq g&ouml;r&uuml;lm&uuml;şd&uuml;rlər.</li>
+            </ul>
+
+            <h2>2014-2015-ci tədris ili</h2>
+
+            <p>Şagirdlərin sayi IX sinif &uuml;zrə 199 nəfər, X sinif &uuml;zrə 210 nəfər, XI siniflər &uuml;zrə 161 nəfər təşkil etmişdir.</p>
+
+            <p>2014-2015-c&uuml; tədris ilində şagird m&uuml;əllim nisbəti 1:13,7 kimi olmuş, tədris planına əsasən şagirdlərin biliyinin dərinləşdirilməsi &uuml;&ccedil;&uuml;n se&ccedil;mə fənlər ve fak&uuml;ltətiv məşğələlər &uuml;zrə saatlar
+              ayrılmışdır.</p>
+
+            <p>XI sinfi bitirən 161 şagirddən 161 (100%) nəfəri Təhsil Nazirliyinin attestat imtahanlarında, 9-cu sinfi bitirən 199 şagird isə buraxılış imtahanlarında uğurla iştirak etmişdir.</p>
+
+            <p>Liseyin altı məzunu qızıl medala layiq g&ouml;r&uuml;lm&uuml;ş və y&uuml;ksək balla ali məktəblərə daxil olmuşdur. 161 şagird 100% ali məktəbə daxil olmuş və onların 40 nəfəri 600-dən yuxarı bal toplamışdır.</p>
+
+            <p>Fənn olimpiadalarının Respublika turunda 11 şagirdimiz qızıl, g&uuml;m&uuml;ş, b&uuml;r&uuml;nc medallarla təltif olunmuşdur.</p>
+
+            <p>12-14 fevral 2015-ci il tarixdə ke&ccedil;irilən &laquo; Sabahın alimləri&raquo; IV Respublika m&uuml;sabiqəsində də liseyin şagirdləri b&ouml;y&uuml;k uğurlara imza atmışdırlar. Onlar m&uuml;xtəlif kateqoriyalar &uuml;zrə 15 layihə
+              ilə təmsil olunmuşdurlar və 10 layihə m&uuml;sabiqədə y&uuml;ksək yer qazanmışdır: Fizika-Astronomiya kateqoriyası &uuml;zrə bir I yer, komp&uuml;ter elmləri &uuml;zrə bir I yer, m&uuml;həndislik, kimya və riyaziyyat kateqoriyası
+              &uuml;zrə &uuml;&ccedil; II yer, digər kateqoriyalar &uuml;zrə isə beş III yer qazanılmışdır.</p>
+
+            <p>I yerə layiq g&ouml;r&uuml;lm&uuml;ş Fizika-Astranomiya kateqoriyası &uuml;zrə layihənin qalibləri Mədət və Nigar Sərdarlı bacı-qardaşları bu ilin may ayında ABŞ-ın Pensilvaniya ştatının Pitsburq şəhərində ke&ccedil;irilmiş
+              &laquo;Elm və m&uuml;həndislik&raquo; sərgisində respublikamızı təmsil etmişlər.</p>
+
+            <p>Artıq şagirdlərimiz layihələrlə beynəlxalq səviyyədə &ccedil;ıxış edərək uğurlar qazanırlar. 10 r4 sinif şagirdi Leyla Ələkbərli və V&uuml;salə S&uuml;leymanova &ldquo;İri şəhərlərin yaşıllaşdırılmasının ekoloji modeli&rdquo; adlı
+              layihəsi ilə 29 aprel-05 may 2015-ci ildə Keniyada ke&ccedil;irilmiş Beynəlxalq elmi-layihə olimpiadasında g&uuml;m&uuml;ş medala layiq g&ouml;r&uuml;lm&uuml;ş, 31 may-05 iyun 2015-ci ildə Niderlanda ke&ccedil;irilmiş İNESPO layihə
+              olimpiadasının iştirak&ccedil;ısı olmuşdurlar.</p>
+
+            <p>10 r1 sinif şagirdi İlkin Musayev Proqramlaşdırma &uuml;zrə bir layihə ilə, 9-cu sinif şagirdləri Ələkbər Əsgərov, Samir İbrahimzadə və 10 r1 sinif şagirdi Cəmil Əlizadə &ldquo;Robot Texnikası&rdquo; &uuml;zrə birgə layihələri ilə
+              liseyimizi bu ilin aprel ayında &Ccedil;ində ke&ccedil;irilmiş beynəlxalq m&uuml;sabiqədə təmsil etmişdirlər.</p>
+
+            <p>10r3 sinif şagirdi Sonaxanım Musayeva &ldquo;ERASMUS&rdquo; proqramının 31 mart-7 aprel 2015-ci il tarixdə Bolqarıstanda ke&ccedil;irilmiş təlimlərdə iştirak etmişdir.</p>
+
+            <p>İstanbulda ke&ccedil;irilən &ldquo;MEF&rdquo; Beynəlxalq Tədqiqat Layihələri yarışmasında liseyimizin 10 a1 sinif şagirdləri Orxan Əhmədov və Tuncay Tağıyev kimya &uuml;zrə birgə hazırladıqları layihə ilə iştirak edərək
+              b&uuml;r&uuml;nc medal almışdırlar.</p>
+
+            <p>Mart ayında bir qrup şagirdin İtaliyanın Roma şəhərindəki konfransda uğurlu &ccedil;ıxışı və aprel ayında İstanbulda ke&ccedil;irilmiş konfransda bir qrup şagirdin iştirakı sevindirici haldır.</p>
+
+            <p>Liseyin XI sinif şagirdi Sergey Styopin 47-ci Beynəlxalq Kimya Olimpiadasında b&uuml;r&uuml;nc medala layiq g&ouml;r&uuml;lm&uuml;şd&uuml;r.</p>
+
+            <p>Şagirdlərin sayı IX sinif &uuml;zrə 242 nəfər, X sinif &uuml;zrə 197 nəfər, XI siniflər &uuml;zrə 203 nəfər təşkil etmişdir.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+{% endblock start %}

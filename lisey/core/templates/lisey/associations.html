@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Dərnəklər{% endblock title %}
+{% block start %}
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a  href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a class="active" href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a class="active" href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a  href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a  href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a  href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+<main id="main">
+
+  <main id="main">
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Dərnəklər</h2>
+      </div>
+    </div>
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content_edusys">
+            <h2>Gənc proqramistlər dərnəyi</h2>
+
+            <p>Rəhbər: BDU m&uuml;əllimi, elmlər namizədi &quot;Ş&ouml;hrət&quot; ordenli Ramin Mahmudzadə</p>
+
+            <h2>Dram dərnəyi</h2>
+
+            <p>Rəhbər: Pantomimo teatrının aktyoru və rejissoru Əməkdar artisti Bəhruz Vaqif Bəhruz oğlu</p>
+
+            <p>D&uuml;nya teatrdır. Həyat pyesdir. Biz insanlar isə o pyesdə rol alan aktyorlarıq. Hər bir insan teatra &ouml;z şəxsi&nbsp; akustikasını gətirir Pyesin həcmi yox, yaxşı oynanılması &nbsp;&ouml;nəmlidir. Teatr həyati sualların həll
+              olunduğu y&uuml;ksək dairədir. Teatr ağlı işıqlandırmalıdır. Məhz Akademik Zərifə Əliyeva adına liseydə yaradılan teatr dərnəyinin məqsədi də zehni işıqla aydınlanan, dahilərin əsərlərini oxuyub səhnələşdirərkən &uuml;mumbəşəri
+              fikirlərə yiyələnən gənclik yetişdirməkdir. &nbsp;</p>
+
+            <h2>Rəqs və ritmika dərnəyi</h2>
+
+            <p>Rəhbərlər: Filarmoniyanın solistləri Nigar H&uuml;seynova və Ramin H&uuml;seynov</p>
+
+            <p>Rəqs cismin və ruhun&nbsp; hər hərəkəti s&ouml;zdən ibarət olan şeiridir.&nbsp; Rəqs incəsənətin anası, ruhun sirli dilidr. Rəqs hiss etdiyiniz ağrını, &uuml;midsizliyi, nifrəti, kədəri dağıdacaq g&uuml;cə malik olan, ətrafına işıq
+              yayan sevgi dolu g&uuml;nəşdir.</p>
+
+            <p>Akademik Zərifə Əliyeva adına liseyin şagirdləri &ldquo;Rəqs dərnəyi&rdquo;nə &uuml;zv olaraq istər milli, istər Avropa və ya Latın Amerika rəqslərini &ouml;yrənməklə,&nbsp; &ouml;zlərini rəqs ruhuna təslim etməklə&nbsp; cismani və
+              zehni yorğunluqlarından tamamilə azad ola bilərlər.</p>
+
+            <h2>Gənc jurnalistlər dərnəyi</h2>
+
+            <p>Rəhbər: Azərbaycan Respublikası Prezidenti yanında bilik fondunun mətbuat katibi Ceyhun Musa oğlu</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+{% endblock start %}
+
+

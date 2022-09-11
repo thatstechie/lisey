@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Məqsəd və vəzifə{% endblock title %}
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a  href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a class="active" href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a class="active" href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+{% block start %}
+  <main id="main">
+
+    <main id="main">
+      <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+          <h2>Məqsəd və vəzifə</h2>
+        </div>
+      </div>
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content_edusys">
+              <h2>Missiya</h2>
+
+              <p>Effektiv təhsil sistemlərinin komponentlərini tətbiq etməklə d&uuml;nyaya a&ccedil;ıq, milli- mənəvi dəyərlərə sadiq, sosial fəal, həyati bacarıqlara malik, rəqabət qabiliyyətli fərdin yetişdirilməsi &uuml;&ccedil;&uuml;n
+                m&uuml;hitin formalaşdırılması.</p>
+
+              <h2>Məqsəd</h2>
+
+              <p>Liseyin əsas məqsədi milli-mənəvi dəyərlərə, yaradıcı təfəkk&uuml;r və məntiqi yanaşmaya malik gənclərin d&uuml;nyaya inteqrasiya edilməsi, m&uuml;stəqil şəxsiyyət kimi formalaşdırılmasından ibarətdir. Təlim-tərbiyə, yeni və səmərəli
+                təhsil yanaşmaları m&uuml;asir metod və texnologiyalar &uuml;zərində qurulur.</p>
+
+              <p>Liseyin əsas vəzifəsi cəmiyyətə yararlı, hərtərəfli inkişaf etmiş layiqli vətəndaş formalaşdırmaq, d&uuml;nyanın qabaqcıl və n&uuml;fuzlu ali təhsil m&uuml;əssisələrində təhsil ala biləcək şagirdlər yetişdirməkdir.</p>
+
+              <p>Lisey fundamental və tətbiqi biliklərin tədrisini əsas tutaraq, tədris prosesinin tədqiqaty&ouml;n&uuml;ml&uuml; olmasına şərait yaradır, şagirdləri yaradıcılığa və axtarışa həvəsləndirir, onların istedadını m&uuml;xtəlif yollarla
+                &uuml;zə &ccedil;ıxarır, n&uuml;mayiş etdirir və dərsdənkənar təlim imkanlarını genişləndirir. Şagirdlərdə vətənpərvərlik, səmimilik,d&ouml;z&uuml;ml&uuml;l&uuml;k, tolerantlıq, xalqa məhəbbət duyğuları &ouml;n plana &ccedil;əkilir,
+                hər bir şagirdə d&ouml;vlət&ccedil;ilik prinsiplərinin qorunması aşılanır.</p>
+
+              <h2>Liseyin əsas vəzifələri</h2>
+
+              <ul>
+                <li>şagirdlərin fiziki və intellektual inkişafı &uuml;&ccedil;&uuml;n əlverişli şərait yaratmaq;</li>
+                <li>şagirdlərin meyil və maraqlarını nəzərə almaqla istedad və qabiliyyətinin reallaşdırılmasına &ccedil;alışmaq;</li>
+                <li>şagirdlərdə &uuml;nsiyyət mədəniyyəti, təşkilat&ccedil;ılıq, tədqiqat&ccedil;ılıq, birgə fəaliyyət bacarıqları, obrazlı və tənqidi təfəkk&uuml;r formalaşdırmaq;</li>
+                <li>informasiya &ndash; kommunikasiya texnologiyalarından sərbəst istifadə etmək, xarici dillərdən birində ( yaxud bir ne&ccedil;əsində ) &uuml;nsiyyət saxlamalarını təmin etmək;</li>
+                <li>şagirdlərdə sağlam həyat tərzinə və sivil dəyərlərə əsaslanan vətəndaş m&ouml;vqeyi formalaşdırmaq;</li>
+                <li>ailə, cəmiyyət, d&ouml;vlət və ətraf m&uuml;hit qarşısında h&uuml;quq və vəzifələrinin m&uuml;əyyən edilməsinə imkan yaratmaq;</li>
+                <li>&uuml;mumi mədəniyyətə malik, milli mənəviyyatlı şəxsiyyət yetişdirmək;</li>
+                <li>m&uuml;stəqil və demokratik Azərbaycan Respublikasının inkişafı naminə fədakarlıqla &ccedil;alışan ləyaqətli vətəndaş tərbiyə etməkdən ibarətdir.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+{% endblock %}

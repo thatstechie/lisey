@@ -1,0 +1,16 @@
+{% load static %}
+<div class="post col-md-4 col-xs-12 col-sm-6">
+    <div class="featured-post">
+      <div class="entry-image">
+        <a href="{% url 'news_details' lisey.slug%}"><img src="{{lisey.image.url}}" alt="image"></a>
+      </div>
+    </div>
+    <div class="date-post">
+      <span class="numb">{{lisey.created_at}}</span>
+    </div>
+    <div class="content-post">
+      <h2 class="title-post">
+        <a href="{% url 'news_details' lisey.slug%}">{{lisey.title}}</a>
+      </h2>
+    </div>
+  </div>

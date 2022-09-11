@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Xəbərlər{% endblock title %}
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a  href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a  href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a  href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a  href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a  href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a  href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+{% block start %}
+
+  <main id="main">
+
+    <main id="main">
+      <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+          <h2>Xəbərlər</h2>
+        </div>
+      </div>
+
+      <section id="news-page" class="news-page">
+        <div class="flat-row lastest-new">
+          <div class="container" data-aos="fade-in">
+            <div class="row post-lastest-new" data-aos="fade-in">
+              {% for lisey in posts %}
+                
+              <div class="post col-md-4 col-xs-12 col-sm-6">
+                <div class="featured-post">
+                  <div class="entry-image">
+                    <a href="{% url 'news_details' lisey.slug%}"><img src="{{lisey.image.url}}" alt="image"></a>
+                  </div>
+                </div>
+                <div class="date-post">
+                  <span class="numb">{{lisey.created_at}}</span>
+                </div>
+                <div class="content-post">
+                  <h2 class="title-post">
+                    <a href="{% url 'news_details' lisey.slug%}">{{lisey.title}}</a>
+                  </h2>
+                </div>
+              </div>
+
+
+
+
+              {% endfor %}
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="blog-pagination" data-aos="fade-in">
+        <ul class="flat-pagination">
+          {% if not posts.has_previous %}<li class="prev  disabled "><span>&laquo;</span> {% else %}  <li class="prev"> {% endif %}
+            {% if posts.has_previous %}<a href="{% url 'news' posts.previous_page_number %} "><span>&laquo;</span></a>{% endif %}
+          </li>
+
+          {% if posts.number|add:'-1' > 1 %}
+            <li class="page-item disabled"><a class="page-link">&hellip;</a></li>
+          {% endif %}
+
+
+          {% for i in posts.paginator.page_range %}
+            {% if posts.number == i %}
+              <li class=" disabled active"><a href="">{{ i }}</a></li>
+            {% elif i > posts.number|add:'-2' and i < posts.number|add:'2' %}
+              <li class="page-item"><a class="page-link" href="{% url 'news' i %}">{{ i }}</a></li>
+            {% endif %}
+          {% endfor %}
+
+          {% if posts.paginator.num_pages > posts.number|add:'1' %}
+            <li class="page-item disabled"><a class="page-link" href="#">&hellip;</a></li>
+          {% endif %}
+
+
+          {% if not posts.has_next %}<li class="next  disabled "><span>&raquo;</span> {% else %}  <li class="next"> {% endif %}
+            {% if posts.has_next %}<a href="{% url 'news' posts.next_page_number %} "><span>&raquo;</span></a>{% endif %}
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+{% endblock %}

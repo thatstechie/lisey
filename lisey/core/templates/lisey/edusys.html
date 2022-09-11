@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Təhsil sistemi{% endblock title %}
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a class="active" href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a class="active" href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+{% block start %}
+<main id="main">
+
+    <main id="main">
+      <div class="breadcrumbs" data-aos="fade-in">
+        <div class="container">
+          <h2>Təhsil sistemi</h2>
+        </div>
+      </div>
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content_edusys">
+              <p>Akademik Zərifə Əliyeva adına lisey Azərbaycan Respublikası Nazirlər Kabinetinin 25.04.2008-ci il tarixli 102 n&ouml;mrəli qərarı ilə təsdiq edilmişdir.</p>
+
+              <p>Lisey Azərbaycan Respublikası Təhsil Nazirliyinin tabeliyindədir.</p>
+
+              <p>Liseydə təlim Azərbaycan və rus dillərindədir.</p>
+
+              <p>Liseyin fərdi tədris planı d&ouml;vlət &uuml;mumtəhsil məktəbinin tədris planları əsasında yaradılır. Təmay&uuml;l siniflər &uuml;&ccedil;&uuml;n fərdi hazırlanan tədris planında bəzi fənlər (məcburi olmayan) inteqrasiya edilə və ya
+                ixtisar oluna bilər.</p>
+
+              <p class="caption">Liseydə təhsil iki pillədən ibarətdir:</p>
+
+              <ul>
+                <li>&Uuml;mumi orta (IX sinif)</li>
+                <li>Tam orta (X &ndash; XI sinif)</li>
+              </ul>
+
+              <p>Liseyin maddi &ndash; texniki bazası imkan verərsə, gələcəkdə &uuml;mumi orta pillənin digər təhsil səviyyələri təşkil edilə bilər.</p>
+
+              <p>Hər tədris ilinin iyun ayında Liseyin IX &ndash; X siniflərinə k&uuml;tləvi şagird qəbulu ke&ccedil;irilir. Liseydə tədris prosesi təmay&uuml;llər &uuml;zrə aparılır. Şagirdlərin istedadının aşkara &ccedil;ıxarılması və onların
+                inkişafının d&uuml;zg&uuml;n istiqamətləndirilməsinin təmin edilməsi məqsədi ilə Akademik Zərifə Əliyeva adına liseydə IX siniflərdən başlayaraq şagirdlərin maraq, meyil, qabiliyyətlərinə və valideynlərin arzusuna uyğun olaraq
+                aşağıdakı təmay&uuml;ll&uuml; siniflər yaradılır:</p>
+
+              <ul>
+                <li>Riyaziyyat &ndash; texniki təmay&uuml;ll&uuml; siniflər</li>
+                <li>Riyaziyyat &ndash; iqtisadiyyat təmay&uuml;ll&uuml; siniflər</li>
+                <li>Humanitar fənlər təmay&uuml;ll&uuml; siniflər</li>
+                <li>Təbiət fənləri təmay&uuml;ll&uuml; siniflər</li>
+              </ul>
+
+              <p>Lisey Pedaqoji Şurasının qərarı ilə təmay&uuml;l fənlər &uuml;zrə m&uuml;təmadi olaraq test sorğuları aparılır.</p>
+
+              <p>Liseydə siniflər 20 nəfər olmaqla komplektləşdirilir. Siniflər təmay&uuml;llər &uuml;zrə təşkil olunduğundan m&ouml;vcud qanunvericilik g&ouml;zlənilməklə, şagirdlərin sayı 20 nəfərdən az və ya &ccedil;ox olmaqla da komplektləşdirilə
+                bilər.</p>
+
+              <p>Azərbaycan və rus b&ouml;lmələrinin IX &ndash; XI siniflərində bir qayda olaraq hər təmay&uuml;l &uuml;zrə bir sinif a&ccedil;ılır. Zərurət yarandıqda, şagirdlərin sayından asılı olaraq təmay&uuml;llər &uuml;zrə sinif komplektlərinin
+                sayı daha artıq ola bilər və ya təmay&uuml;l siniflərdən biri digər təmay&uuml;l siniflə əvəz edilə bilər.</p>
+
+              <p>Dərslər bir qayda olaraq sentyabrın 15 - də başlayır və iyunun 14 - də başa &ccedil;atır.</p>
+
+              <p class="caption">Dərs ili iki yarımilə b&ouml;l&uuml;n&uuml;r.</p>
+
+              <ul>
+                <li>I yarımil - 15 sentyabr - 31 yanvar</li>
+                <li>II yarımil - 01 fevral &ndash; 14 iyun</li>
+              </ul>
+
+              <p>Lisey altıg&uuml;nl&uuml;k iş həftəsi &uuml;zrə işləyir. Liseyin &uuml;mumi təhsil proqramları &uuml;zrə tədris planı beşg&uuml;nl&uuml;k tədris həftəsində reallaşdırılır. Şənbə g&uuml;nləri Liseydə şagirdlərlə sinifdənxaric
+                tədbirlər, seminar və m&uuml;hazirələr, məsləhət və sinif saatları, əlavə tədris xidmətləri, valideyn iclasları, a&ccedil;ıq qapı g&uuml;nləri, fakultativ, dərnək və klubların işi və s. təşkil olunur. Zərurət yarandıqda, bəzi fənlər
+                təsdiq edilmiş cədvəl &uuml;zrə şənbə g&uuml;n&uuml; tədris edilə bilər.</p>
+
+              <p>Dərs məşğələləri direktorun təsdiq etdiyi cədvəllə m&uuml;əyyən olunur və dərs 45 dəqiqə davam edir, məşğələlərarası fasilə isə şagirdlərin fəal istirahəti və məktəbin daxili imkanları nəzərə alınmaqla m&uuml;əyyən edilir.</p>
+
+              <p class="caption">Dərs ili m&uuml;ddətində aşağıdakı tətillər m&uuml;əyyən edilir:</p>
+
+              <ul>
+                <li>Payız tətili - 16 noyabr - 20 noyabr</li>
+                <li>Qış tətili - 27 yanvar - 31 yanvar</li>
+              </ul>
+
+              <p>Şagird nailiyyətlərinin qiymətləndirilməsi yarımilliklər &uuml;zrə aparılır. Şagirdin yarımillik qiyməti ki&ccedil;ik summativ ( yarımillik ərzində ke&ccedil;irilən) qiymətləndirmənin nəticələri 40%, b&ouml;y&uuml;k summativ
+                (yarımillik sonunda ke&ccedil;irilən) qiymətləndirmənin nəticələri 60% hesab olunmaqla &ccedil;ıxarılır. Liseydaxili qiymətləndirmənin nəticələri 100 ballıq qiymət şkalası ilə ifadə olunur. Şagirdlərin illik və yekun qiymətləri 5
+                ballıq qiymət şkalasına ke&ccedil;irilir.</p>
+
+              <p>Liseyin nizamnaməsinə g&ouml;rə daxili nizam &ndash; intizam qaydalarını kobud surətdə pozan və proqram materiallarını mənimsəyə bilməyən şagirdlər direktorun əmri ilə cəzalandırıla və ya Pedaqoji Şuranın qərarı ilə liseydən xaric
+                edilə bilərlər.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+{% endblock %}

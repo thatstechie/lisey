@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Məzunlar 2022{% endblock title %}
+{% block header %}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+    <a href="{% url 'home' %}" class="logo-photo me-auto"><img src="{% static 'assets/img/faviconblue.png'%}" alt="" class="img-fluid"></a>
+    <h1 class="logo me-auto"><a href="{% url 'home' %}">Gəncə şəhəri Fizika Riyaziyyat və İnformatika<br> təmayüllü lisey</a></h1>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a  href="{% url 'home' %}">Ana səhifə</a></li>
+        <li class="dropdown"><a href="#"><span>Lisey haqqında</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{% url 'about' %}">Direktorun mesajı</a></li>
+            <li><a href="{% url 'mission' %}">Məqsəd və vəzifə</a></li>
+            <li><a href="{% url 'edusys' %}">Təhsil sistemi</a></li>
+          </ul>
+        </li>
+        <li><a href="results.html">İmtahan nəticələri</a></li>
+        <li class="dropdown"><a href="#"><span>Fəaliyyətlər</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/contests/1">Müsabiqələr</a></li>
+            <li><a href="/events/1">Tədbirlər</a></li>
+            <li><a href="{% url 'associations' %}">Dərnəklər</a></li>
+            <li><a href="{% url 'clubs' %}">Klublar</a></li>
+          </ul>
+        </li>
+        <li><a  href="{% url 'achievements' %}">Nailiyyətlər</a></li>
+        <li class="dropdown"><a class="active" href="#"><span>Məzunlar</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a class="active" href="{% url 'alumni2022' %}">2022</a></li>
+          </ul>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+    <a href="https://edu.gov.az/az/announcements/16235-1" target="_blank" class="get-started-btn">Qeydiyyatdan keç</a>
+
+  </div>
+</header>
+
+{% endblock header %}
+{% block start %}
+
+<main id="main">
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1 class="d-flex justify-content-center align-items-center">Məzunlar - 2022</h1>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="icon-boxes d-flex flex-column justify-content-center">
+          <div class="row">
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box mt-4 mt-xl-0 shadow-sm p-3 mb-5 bg-white rounded">
+                <p>600-dən yuxarı bal toplayanların sayı: <strong>59</strong></p>
+                <p>Xarici universitetlərə qəbul olanların sayı: <strong>26</strong></p>
+              </div>
+            </div>
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box mt-4 mt-xl-0 shadow-sm p-3 mb-5 bg-white rounded">
+                <p>Məzun sayı: <strong>202</strong></p>
+                <p>Universitetə qəbul sayı: <strong>200</strong></p>
+              </div>
+            </div>
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box mt-4 mt-xl-0 shadow-sm p-3 mb-5 bg-white rounded">
+                <p>Qızıl medalların sayı: <strong>11</strong></p>
+                <p>Gümüş medalların sayı: <strong>22</strong></p>
+                <p>Bürünc medalların sayı: <strong>33</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" class="why-us">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-stretch">
+          <div class="content">
+            <h3>Niyə Gəncə FRİTL?</h3>
+            <p>
+              Olimpiadalar üzrə Azərbaycanda nömrə 3 olan və ümumi göstəricilərə əsasən yüksək reytinqli Gəncə FRİTL övladınızın gələcək həyatında böyük rol oynayacaq.
+            </p>
+            <div class="text-center">
+              <a href="message.html" class="more-btn">Daha çox<i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-medal"></i>
+                  <h4>Olimpiadalara qatılmaq</h4>
+                  <p>Hər il şagirdlərimiz respublika və beynəlxalq olimpiadalara qatılır və müxtəlif dərəcəli mükafatlar qazanırlar.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-book-open"></i>
+                  <h4>DİM imtahanından yüksək nəticə yığmaq</h4>
+                  <p>Məzunlarımızın 90%-i 500+ DİM imtahanından nəticə göstərirlər.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-laptop"></i>
+                  <h4>STEAM dərslərinə qatılmaq</h4>
+                  <p>Şagirdlərimiz Steam Azerbaijan Festivalı, Teknofest və başqa STEAM-lə bağlı yarışlara qatılırlar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+{% endblock start %}
+
